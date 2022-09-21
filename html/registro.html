@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/java.js" type="text/javascript"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <title>Registro</title>
+    </head>
+    <body  background="img/regis.png" alt="fondo">
+       
+        <form id="inicio" method="get" action="login" onsubmit="return validar()" > 
+            <h1 class="titul">Registro</h1>  
+            <div id="caja" >
+            <label>Nombre:</label> 
+            <input type="text" name="nombre"/>
+            <span id="nombre" class="errores"></span> 
+            
+            <label>Usuario:</label> 
+            <input type="text" name="usuario"/>
+            <span id="usuario" class="errores">TEXT</span> 
+            
+            <label>Contraseña:</label> 
+            <input type="password" name="contraseña"/>
+            <span id="contraseña" class="errores">TEXT</span> 
+            
+            <label>Confirmar Contraseña:</label> 
+            <input type="password" name="cocontraseña"/>
+            <span id="cocontraseña" class="errores">TEXT</span>  
+            
+            <label>Email:</label> 
+            <input type="email" name="email" required/>
+            <span id="email" class="errores">TEXT</span>  
+            <br> 
+            <br>
+           
+            <input type="reset" class="botn"  name="reset" value="Reiniciar"  /> 
+            <input type="submit" class="botn"  name="enviar" value="Enviar"  /> 
+            <input type="hidden" name="paginas" value="regis" />
+            
+             </div>
+            
+            
+            <span id="validar" class="errores">TEXT</span> 
+            
+        </form>
+        
+        
+    </body>
+</html>
